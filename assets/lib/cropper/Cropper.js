@@ -3286,7 +3286,7 @@
 
 
         if (REGEXP_DATA_URL.test(url)) {
-          // Read ArrayBuffer from Data URL of JPEG images directly for better performance
+          // Read ArrayBuffer from Data URL of JPEG img directly for better performance
           if (REGEXP_DATA_URL_JPEG.test(url)) {
             this.read(dataURLToArrayBuffer(url));
           } else {
