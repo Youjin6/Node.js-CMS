@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Event Login</title>
+
+    <link rel="stylesheet" href="/front-end/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/front-end/assets/css/login.css">
+</head>
+
+<body>
+    <div class="layui-main">
+        <img src="/front-end/assets/img/logo.png">
+    </div>
+    <div class="login-register">
+        <div class="login-register-title">
+        </div>
+        <!-- login box -->
+        <div class="login-box">
+            <!-- login form -->
+            <form class="layui-form" action="">
+                <!-- usernmae -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-user"></i>
+                    <input class="layui-input" type="text" name="username" required lay-verify="required" placeholder="Username" autocomplete="off">
+                </div>
+                <!-- password -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input class="layui-input" type="text" name="password" required lay-verify="required|pwd" placeholder="password" autocomplete="off">
+                </div>
+                <!-- submit -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit>立即提交
+                </div> 
+                <div class="layui-form-item link-to" >
+                    <a href="javascript:;" id="link-register">Register</a>
+                </div>
+            </form> 
+        </div>
+        <div class="register-box">
+            <form class="layui-form" id="form_register">
+                <!-- usernmae -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-user"></i>
+                    <input class="layui-input" type="text" name="username" required lay-verify="required" placeholder="Account" autocomplete="off">
+                </div>
+                <!-- password -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input class="layui-input" type="text" name="password" required lay-verify="required|pwd" placeholder="password" autocomplete="off">
+                </div>
+                <!-- confirm password -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input class="layui-input" type="text" name="confirmPassword" required lay-verify="required|verifyPwd" placeholder="Confirm you password" autocomplete="off">
+                </div>
+                <!-- submit -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-normal layui-btn-fluid data-submit" lay-submit>立即提交
+                </div> 
+                <div class="layui-form-item link-to" >
+                    <a href="javascript:;" id="link-login">Login</a>
+                </div>
+            </form> 
+        </div>
+
+
+        <script src="/front-end/assets/lib/layui/layui.all.js"></script>
+        <!-- impoty JQuery -->
+        <script src="/front-end/assets/lib/jquery.js"></script>
+        <!-- import login.js -->
+        <script src="/front-end/assets/js/login.js"></script>
+    </div>
+
+
+</body>
+
+</html>
